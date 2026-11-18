@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Kelab Teknologi Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo">TEKNOLOGI//DIGITAL</a>
+        <button class="menu-trigger" onclick="toggleMenu()">☰ Menu</button>
+    </nav>
+
+    <div id="navOverlay" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <div class="overlay-content">
+            <p class="menu-label">MENU</p>
+            <a href="home.html" class="menu-item">Laman Utama</a>
+            <a href="about.html" class="menu-item">Tentang Kelab</a>
+            <a href="service.html" class="menu-item">Servis & Baik Pulih</a>
+            <a href="register.html" class="menu-item">Pendaftaran</a>
+            <div class="contact-info">
+                <h3>HUBUNGI KAMI</h3>
+                <a href="tel:01158911598" class="contact-item"><span class="icon">📞</span> 011-5891 1598</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=irfan2020izzuddin@gmail.com" target="_blank" class="contact-item"><span class="icon">✉️</span> irfan2020izzuddin@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/amprosave235/?hl=en" target="_blank" class="social-btn">📷 Instagram</a>
+                    <a href="https://www.tiktok.com/@zoideez?lang=en-GB" target="_blank" class="social-btn">🎵 TikTok</a>
+                </div>
+                <div class="action-buttons"><a href="register.html" class="action-btn">Log Masuk</a></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero">
+        <span class="badge">PENDAFTARAN AHLI BARU</span>
+        <h1>INISIALISASI <span class="highlight">AHLI BARU</span></h1>
+    </header>
+
+    <div class="form-container">
+        <form>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>NAMA PENUH</label>
+                    <input type="text" placeholder="Masukkan nama penuh anda" required>
+                </div>
+                <div class="form-group">
+                    <label>NO. MATRIK / KAD PENGENALAN</label>
+                    <input type="text" placeholder="Contoh: 12DKM21F1001" required>
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>EMEL PELAJAR</label>
+                    <input type="email" placeholder="email@pelajar.edu.my" required>
+                </div>
+                <div class="form-group">
+                    <label>NO. TELEFON</label>
+                    <input type="number" placeholder="Contoh: 0123456789" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>KURSUS / PROGRAM PENGAJIAN</label>
+                <select required>
+                    <option value="" disabled selected>-- Pilih Kursus --</option>
+                    <option value="dkm">Diploma Kejuruteraan Komputer (DKM)</option>
+                    <option value="dsk">Diploma Sains Komputer (DSK)</option>
+                    <option value="dit">Diploma Teknologi Maklumat (DIT)</option>
+                    <option value="lain">Lain-lain</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>TAHAP KEMAHIRAN RANGKAIAN / KOMPUTER</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="skill" value="pemula" required> Pemula (Zero Knowledge)</label>
+                    <label><input type="radio" name="skill" value="pertengahan"> Pertengahan (Boleh Install OS)</label>
+                    <label><input type="radio" name="skill" value="mahir"> Mahir (Boleh Baiki Hardware)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>BIDANG YANG DIMINATI (Boleh Pilih Lebih Dari 1)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" value="web"> Web Development</label>
+                    <label><input type="checkbox" value="hardware"> Hardware & Servis</label>
+                    <label><input type="checkbox" value="cyber"> Cybersecurity</label>
+                    <label><input type="checkbox" value="ai"> AI & Data</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>KENAPA ANDA MAHU MENYERTAI KELAB INI?</label>
+                <textarea rows="4" placeholder="Tulis motivasi anda di sini (minima 20 patah perkataan)..." required></textarea>
+            </div>
+
+            <div class="form-group" style="display: flex; gap: 10px; align-items: center; margin-top: 20px;">
+                <input type="checkbox" id="terma" required style="width: 20px; height: 20px;">
+                <label for="terma" style="margin: 0; font-family: 'Rajdhani', sans-serif; font-size: 1em; color: #fff;">Saya bersetuju dengan terma & syarat kelab.</label>
+            </div>
+
+            <button type="submit" class="btn-daftar" style="width: 100%; margin-top: 20px;">Aktifkan Pendaftaran</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleMenu() { document.getElementById("navOverlay").classList.toggle('active'); }
+    </script>
+</body>
+</html>

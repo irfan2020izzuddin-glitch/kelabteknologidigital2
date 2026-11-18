@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Kelab Teknologi Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo">TEKNOLOGI//DIGITAL</a>
+        <button class="menu-trigger" onclick="toggleMenu()">☰ Menu</button>
+    </nav>
+
+    <div id="navOverlay" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <div class="overlay-content">
+            <p class="menu-label">MENU</p>
+            <a href="home.html" class="menu-item">Laman Utama</a>
+            <a href="about.html" class="menu-item">Tentang Kelab</a>
+            <a href="service.html" class="menu-item">Servis & Baik Pulih</a>
+            <a href="register.html" class="menu-item">Pendaftaran</a>
+            <div class="contact-info">
+                <h3>HUBUNGI KAMI</h3>
+                <a href="tel:01158911598" class="contact-item"><span class="icon">📞</span> 011-5891 1598</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=irfan2020izzuddin@gmail.com" target="_blank" class="contact-item"><span class="icon">✉️</span> irfan2020izzuddin@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/amprosave235/?hl=en" target="_blank" class="social-btn">📷 Instagram</a>
+                    <a href="https://www.tiktok.com/@zoideez?lang=en-GB" target="_blank" class="social-btn">🎵 TikTok</a>
+                </div>
+                <div class="action-buttons"><a href="register.html" class="action-btn">Log Masuk</a></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero">
+        <span class="badge">SISTEM MAKLUMAT KELAB</span>
+        <h1>MISI & <span class="highlight">OPERASI</span></h1>
+    </header>
+
+    <div class="kandungan-putih" style="text-align: left;">
+        <h2>MAKLUMAT KELAB</h2>
+        <p style="font-size: 1.1em; line-height: 1.8;">
+            <strong>Nama Kelab:</strong> Kelab Teknologi Digital<br>
+            <strong>Institusi:</strong> Japan Malaysia Technical Institute (JMTI)<br>
+            <strong>Tahun Penubuhan:</strong> 2026
+        </p>
+    </div>
+
+    <div class="kandungan-putih" style="text-align: left;">
+        <h2>Misi Kelab</h2>
+        <p style="font-size: 1.1em; margin-bottom: 30px;">
+            Menyediakan ekosistem yang dinamik untuk pelajar mengasah bakat digital, menjalin kerjasama strategik, dan berinovasi dalam landskap teknologi yang sentiasa berubah.
+        </p>
+        <div class="features-container" style="padding: 0; gap: 15px;">
+            <div class="card" style="width: 30%; min-width: 200px;">
+                <h3 style="font-size: 1em;">Berdaya Saing</h3>
+                <p>Membentuk bakat digital yang berkemahiran tinggi menerusi pendedahan praktikal selari dengan kehendak industri global.</p>
+            </div>
+            <div class="card" style="width: 30%; min-width: 200px;">
+                <h3 style="font-size: 1em;">Inovasi</h3>
+                <p>Membudayakan pemikiran kritis dan kreatif melalui projek eksperimental serta penciptaan solusi digital inovatif.</p>
+            </div>
+            <div class="card" style="width: 30%; min-width: 200px;">
+                <h3 style="font-size: 1em;">Komuniti</h3>
+                <p>Membina jaringan sosial yang erat, menggalakkan semangat gotong-royong serta perkongsian ilmu dalam kalangan pelajar.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="kandungan-putih" style="text-align: left;">
+        <h2>Jadual Operasi & Latihan</h2>
+        <div class="jadual-container" style="padding: 0;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Program</th>
+                        <th>Masa</th>
+                        <th>Lokasi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>01</td><td>Bengkel Teardown & Diagnostik Motherboard</td><td>Isnin | 15:00 - 17:00</td><td>Cyber Lab 1</td></tr>
+                    <tr><td>02</td><td>Kelas Front-End Development (UI/UX)</td><td>Rabu | 14:30 - 16:30</td><td>Cyber Lab 2</td></tr>
+                    <tr><td>03</td><td>Simulasi Ethical Hacking & Firewall</td><td>Jumaat | 09:00 - 11:00</td><td>Bilik Server Utama</td></tr>
+                    <tr><td>04</td><td>Klinik Pembaikan Komputer Pelajar</td><td>Sabtu | 10:00 - 13:00</td><td>Zon Workshop Kelab</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="kandungan-putih" style="text-align: left;">
+        <h2>Analisis Sistem Dalaman</h2>
+        <p>Setiap ahli didedahkan dengan struktur dalaman chassis komputer termasuk pengurusan kabel (cable management) dan penempatan komponen berkuasa tinggi.</p>
+        <img src="Image/gambar1.jpeg" alt="Dalaman PC" class="gambar-penuh">
+    </div>
+
+    <script>
+        function toggleMenu() { document.getElementById("navOverlay").classList.toggle('active'); }
+    </script>
+</body>
+</html>

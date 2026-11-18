@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Servis - Kelab Teknologi Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo">TEKNOLOGI//DIGITAL</a>
+        <button class="menu-trigger" onclick="toggleMenu()">☰ Menu</button>
+    </nav>
+
+    <div id="navOverlay" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <div class="overlay-content">
+            <p class="menu-label">MENU</p>
+            <a href="home.html" class="menu-item">Laman Utama</a>
+            <a href="about.html" class="menu-item">Tentang Kelab</a>
+            <a href="service.html" class="menu-item">Servis & Baik Pulih</a>
+            <a href="register.html" class="menu-item">Pendaftaran</a>
+            <div class="contact-info">
+                <h3>HUBUNGI KAMI</h3>
+                <a href="tel:01158911598" class="contact-item"><span class="icon">📞</span> 011-5891 1598</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=irfan2020izzuddin@gmail.com" target="_blank" class="contact-item"><span class="icon">✉️</span> irfan2020izzuddin@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/amprosave235/?hl=en" target="_blank" class="social-btn">📷 Instagram</a>
+                    <a href="https://www.tiktok.com/@zoideez?lang=en-GB" target="_blank" class="social-btn">🎵 TikTok</a>
+                </div>
+                <div class="action-buttons"><a href="register.html" class="action-btn">Log Masuk</a></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero">
+        <span class="badge">SISTEM DIAGNOSTIK // AKTIF</span>
+        <h1>CYBER CLINIC : <span class="highlight">SERVIS</span></h1>
+    </header>
+
+    <div class="kandungan-putih">
+        <h2>Protokol Pembaikan Peranti</h2>
+        <img src="Image/baiki-pc.jpeg" alt="Proses Baiki PC" class="gambar-penuh">
+        <p style="font-size: 1.1em; max-width: 800px; margin: 20px auto; color: #a0b2c9;">
+            Ahli kelab kami dilatih untuk melakukan pelbagai operasi teknikal bagi memastikan perkakasan pelanggan beroperasi pada tahap optimum. Berikut adalah protokol standard yang kami jalankan:
+        </p>
+
+        <div class="service-grid">
+            <div class="service-box">
+                <h4>[01] Hardware Scanning</h4>
+                <p>Pengimbasan menyeluruh menggunakan perisian diagnostik untuk mengesan komponen yang rosak atau tidak stabil.</p>
+            </div>
+            <div class="service-box">
+                <h4>[02] Deep Cleaning</h4>
+                <p>Pembersihan habuk pada kipas, heatsink, dan papan litar untuk mengelakkan overheating (pemanasan berlebihan).</p>
+            </div>
+            <div class="service-box">
+                <h4>[03] Thermal Pasting</h4>
+                <p>Aplikasi semula thermal paste berkualiti tinggi pada CPU/GPU untuk memastikan pemindahan haba yang efisien.</p>
+            </div>
+            <div class="service-box">
+                <h4>[04] Component Swap</h4>
+                <p>Penggantian alat yang rosak (seperti RAM, SSD, atau PSU) dengan komponen baharu yang serasi.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() { document.getElementById("navOverlay").classList.toggle('active'); }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Info Kelab - Kelab Teknologi Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo">TEKNOLOGI//DIGITAL</a>
+        <button class="menu-trigger" onclick="toggleMenu()">☰ Menu</button>
+    </nav>
+
+    <div id="navOverlay" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <div class="overlay-content">
+            <p class="menu-label">MENU</p>
+            <a href="home.html" class="menu-item">Laman Utama</a>
+            <a href="about.html" class="menu-item">Tentang Kelab</a>
+            <a href="service.html" class="menu-item">Servis & Baik Pulih</a>
+            <a href="register.html" class="menu-item">Pendaftaran</a>
+            <div class="contact-info">
+                <h3>HUBUNGI KAMI</h3>
+                <a href="tel:01158911598" class="contact-item"><span class="icon">📞</span> 011-5891 1598</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=irfan2020izzuddin@gmail.com" target="_blank" class="contact-item"><span class="icon">✉️</span> irfan2020izzuddin@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/amprosave235/?hl=en" target="_blank" class="social-btn">📷 Instagram</a>
+                    <a href="https://www.tiktok.com/@zoideez?lang=en-GB" target="_blank" class="social-btn">🎵 TikTok</a>
+                </div>
+                <div class="action-buttons"><a href="register.html" class="action-btn">Log Masuk</a></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero">
+        <h1>CORE DATA <span class="highlight">KELAB</span></h1>
+    </header>
+
+    <div class="kandungan-putih">
+        <h2>Misi & Visi Sistem</h2>
+        <p>Misi kami adalah untuk melahirkan barisan pelajar yang celik teknologi, berdaya saing, dan berkemahiran tinggi dalam menyelesaikan masalah sistem komputer.</p>
+        <br>
+        <h2>Kelebihan Menyertai Kami</h2>
+        <ul style="text-align: left; display: inline-block; font-size: 1.1em; line-height: 2; color: #00f0ff;">
+            <li>Latihan hands-on baiki PC & Laptop.</li>
+            <li>Akses ke bengkel coding eksklusif.</li>
+            <li>Sijil penyertaan untuk resume anda.</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() { document.getElementById("navOverlay").classList.toggle('active'); }
+    </script>
+</body>
+</html>
